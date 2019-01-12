@@ -6,3 +6,16 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+c = a + b
+p c
+
+d = a | b
+p d
+
+e = a & b
+p e
+
+a.zip b
+p a
+
+p a.zip(b).flatten.compact

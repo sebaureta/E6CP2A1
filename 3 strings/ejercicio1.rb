@@ -4,4 +4,14 @@
 # o string dado está contenido en éste.
 
 cadena = 'Hola Mundo!'
-caracter = 'o'
+@caracter = 'o'
+
+def recibe(cadena)
+  if cadena.include?(@caracter)
+    puts'Si está'
+  else
+    puts'No está'
+  end
+end
+
+recibe(cadena)

@@ -9,4 +9,34 @@
 # 5. Utilizando un arreglo vacío auxiliar y operaciones de push y pop:
 #    invertir el orden de los elementos en un arreglo.
 
-a = [1,2,3,9,1,4,5,2,3,6,6]
+
+
+a = [1, 2, 3, 4, 1, 5, 1]
+
+def deletemedio
+  cant = a.length
+  if cant.even?
+    cant /= 2
+    a.delete_at(cant - 1)
+  else
+    cant /= 2
+    a.delete_at(cant)
+  end
+  print a
+end
+
+def deletelastnot1
+  last = a.length - 1
+  a.pop if a[last] != 1
+  print a
+end
+
+def deletelast
+  a.pop
+  print a
+end
+
+def deletefirst
+  a.shift
+  print a
+end

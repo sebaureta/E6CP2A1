@@ -4,4 +4,13 @@
  # 3. Crear un método para obtener el promedio de un arreglo.
  # 4. Crear un método que incrementa todos los elementos en una unidad y devuelva un arreglo nuevo.
 
-a = [1,2,3,9,1,4,5,2,3,6,6]
+a = [1,3,2,3,8]
+
+#def deletepar
+count = 0
+a.each do |x|
+  a.delete_at(count) if x.even?
+  count += 1
+end
+
+print a

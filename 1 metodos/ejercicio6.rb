@@ -11,8 +11,11 @@ def draw_line(size)
 end
 
 def draw_lines(size)
-  size.times { }
+  puts size.times
 end
+
+
+
 
 draw_line 2
 draw_lines 10
